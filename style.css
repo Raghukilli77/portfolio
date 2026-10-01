@@ -740,6 +740,27 @@ button {
     color: var(--accent-blue);
 }
 
+.hero-meta .meta-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border: 1px solid var(--card-border);
+    border-radius: 6px;
+    background: rgba(0, 240, 255, 0.04);
+    transition: 0.3s ease;
+}
+
+.hero-meta .meta-item i {
+    font-size: 1rem;
+}
+
+.hero-meta .meta-item:hover {
+    border-color: var(--accent-blue);
+    background: rgba(0, 240, 255, 0.08);
+    box-shadow: 0 0 12px var(--accent-glow);
+}
+
 .location-item {
     color: #8a99ad;
 }
