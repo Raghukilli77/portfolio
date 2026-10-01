@@ -679,3 +679,158 @@ footer .online {
         opacity: 1;
     }
 }
+
+/* RK Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+}
+
+.rk-badge {
+    background: var(--accent-blue);
+    color: #0b0f19;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+    font-weight: 800;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+}
+
+.logo-text {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.logo-text span {
+    color: var(--accent-blue);
+}
+
+/* Open to Opportunities Badge */
+.opportunity-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 240, 255, 0.08);
+    border: 1px solid rgba(0, 240, 255, 0.3);
+    color: var(--accent-blue);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #00ff88;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #00ff88;
+    animation: pulse-dot 1.8s infinite;
+}
+
+@keyframes pulse-dot {
+    0% { opacity: 0.4; }
+    50% { opacity: 1; }
+    100% { opacity: 0.4; }
+}
+
+/* Hero Quick Links (GitHub, LinkedIn, Location) */
+.hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px 0 25px 0;
+}
+
+.meta-item {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.meta-item:hover {
+    color: var(--accent-blue);
+}
+
+.location-item {
+    color: #8a99ad;
+}
+
+/* 5-Option Interactive Skills Section */
+.skills-subtitle {
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.skills-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.skill-tab-btn {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--card-border);
+    color: var(--text-muted);
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.skill-tab-btn:hover {
+    border-color: var(--accent-blue);
+    color: #ffffff;
+    background: rgba(0, 240, 255, 0.05);
+}
+
+.skill-tab-btn.active {
+    background: rgba(0, 240, 255, 0.12);
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
+    box-shadow: 0 0 12px rgba(0, 240, 255, 0.2);
+}
+
+.skills-display-container {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 30px;
+    min-height: 180px;
+}
+
+.skill-panel {
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+.skill-panel.active {
+    display: block;
+}
+
+.skill-panel h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
